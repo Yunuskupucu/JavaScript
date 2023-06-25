@@ -19,5 +19,8 @@
 ## Starter
 <img width="1440" alt="Ekran Resmi 2023-06-25 15 27 35" src="https://github.com/Yunuskupucu/JavaScript/assets/107491954/c9715c6a-4ad9-470e-9b59-57c59c79c2c3">
 
+## When playing
+<img width="1433" alt="Ekran Resmi 2023-06-25 15 41 13" src="https://github.com/Yunuskupucu/JavaScript/assets/107491954/6c38cecd-fcf8-45ed-83b3-db2420eb702a">
+
 ## When someone wins
 <img width="1438" alt="Ekran Resmi 2023-06-25 15 37 47" src="https://github.com/Yunuskupucu/JavaScript/assets/107491954/42e78fec-da2f-444e-94e3-90f74ff304b4">
