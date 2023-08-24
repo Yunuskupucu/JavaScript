@@ -21,7 +21,7 @@ body {
 
 .container {
   padding: 20px 25px;
-  background-color: aqua;
+  background-color: rgb(178, 178, 178);
   border-radius: 10px;
 }
 
@@ -57,4 +57,14 @@ body {
   outline: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+#error {
+  text-align: center;
+  background-color: #ffffff;
+  color: #ff5c5c;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 10px;
+  display: none;
 }
