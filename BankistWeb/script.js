@@ -30,7 +30,7 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-const header = document.querySelector('.header');
+/* const header = document.querySelector('.header');
 const allSections = document.querySelectorAll('.section');
 // Creating and inserting elements
 // .insertAdjacentHTML
@@ -39,15 +39,32 @@ const message = document.createElement('div');
 message.classList.add('cookie-message');
 message.innerHTML = `We use cookied for improved functionaltiy and analytics. <button class="btn btn--close-cookie"=>Got it!</button>`;
 
-header.append(message);
+header.append(message); */
 
-// Delete elements
+/*  Delete elements
 document
   .querySelector('.btn--close-cookie')
   .addEventListener('click', function () {
     message.remove();
   });
 
-// Styles
+ Styles
 message.style.backgroundColor = '#37383d';
-message.style.width = '120%';
+message.style.width = '120%'; */
+
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+
+btnScrollTo.addEventListener('click', function (e) {
+  const s1coords = section1.getBoundingClientRect();
+  console.log(s1coords);
+
+  // Scrolling
+  /*   window.scrollTo({
+    left: s1coords.left + window.pageXOffset,
+    top: s1coords.top + window.pageYOffset,
+    behavior: 'smooth',
+  }); */
+
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
