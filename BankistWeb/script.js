@@ -47,3 +47,7 @@ document
   .addEventListener('click', function () {
     message.remove();
   });
+
+// Styles
+message.style.backgroundColor = '#37383d';
+message.style.width = '120%';
