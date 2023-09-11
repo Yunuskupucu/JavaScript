@@ -41,10 +41,31 @@ btnScrollTo.addEventListener('click', function (e) {
   console.log(e.target.getBoundingClientRect());
 
   console.log('Current scroll (X/Y)', window.pageXOffset, window.pageYOffset);
+  console.log(
+    'heigh/width vievport',
+    document.documentElement.clientHeight,
+    document.documentElement.clientWidth
+  );
 
   section1.scrollIntoView({ behavior: 'smooth' });
+});
+/////////////////////////////
+// Page Navigation
 
-  /* const header = document.querySelector('.header');
+// 1. Add event listener to common parent element
+// 2. Determine what element originated the event
+
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  // Matching strategy
+  if (e.target.classList.contains('nav__link')) {
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
+/* const header = document.querySelector('.header');
 const allSections = document.querySelectorAll('.section');
 // Creating and inserting elements
 // .insertAdjacentHTML
@@ -55,7 +76,7 @@ message.innerHTML = `We use cookied for improved functionaltiy and analytics. <b
 
 header.append(message); */
 
-  /*  Delete elements
+/*  Delete elements
 document
   .querySelector('.btn--close-cookie')
   .addEventListener('click', function () {
@@ -66,10 +87,9 @@ document
 message.style.backgroundColor = '#37383d';
 message.style.width = '120%'; */
 
-  // Scrolling
-  /*   window.scrollTo({
+// Scrolling
+/*   window.scrollTo({
     left: s1coords.left + window.pageXOffset,
     top: s1coords.top + window.pageYOffset,
     behavior: 'smooth',
   }); */
-});
