@@ -6,7 +6,11 @@
 
 body {
   height: 100vh;
-  background: #1c1b1b;
+  background: radial-gradient(
+    circle,
+    rgba(140, 22, 22, 1) 0%,
+    rgba(6, 0, 0, 1) 100%
+  );
 }
 
 header {
@@ -57,7 +61,7 @@ h1 {
 .container {
   margin-top: 100px;
   padding: 20px 25px;
-  background-color: rgb(178, 178, 178);
+  background-color: rgb(131, 119, 119);
   border-radius: 10px;
 }
 
